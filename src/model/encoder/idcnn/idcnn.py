@@ -2,7 +2,7 @@
 # contact: ycfrude@163.com
 # datetime:2022/3/1 3:54 PM
 
-from typing import List, Union, Dict, Tuple
+from typing import List, Union, Dict
 from collections import OrderedDict
 import torch
 import torch.nn as nn
@@ -12,6 +12,7 @@ _activate_func = {
     "relu": nn.ReLU,
 }
 _base_type = {int, float, dict, list, tuple, str}
+
 
 class IDCNN(nn.Module):
     '''
